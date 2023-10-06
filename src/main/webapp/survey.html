@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GMU | CS Survey</title>
+  <link rel="icon" href="./images/GMu1.png" type="image/x-icon" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  
+  <link rel="stylesheet" href="./CSS/gmucs_style.css">
+</head>
+<body>
+<header>
+    <div class="container header-top bg-white">
+        <div class="container" style="margin: 5px;">
+          <div class="row">
+            <div class="col-sm-2">
+                <img src="./images/GMU_plane.png" alt="GMU" style="width: 100px;">
+            </div>
+            <div class="col-sm-4 header-text">
+                <h4><strong>George Mason University </strong></h4>
+            </div>
+          </div>
+        </div>
+    </div>
+    <nav class="container navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">CS Department</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+            <li><a href="http://lokesh-swe645.s3-website-us-east-1.amazonaws.com">Home</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+</header>
+
+
+<div class="container survey_main">
+    <h3 style="text-align: center;"><strong>Feedback Survey</strong></h3>
+    <form autocomplete="on">
+        <h4><strong>Personal Details</strong></h4>
+        <div class="row">
+            <div class="col-sm-6 col-xs-12 form-group">
+                <label for="firstName" class="form-label">First name 
+                    <span style="color: red;">*</span></label>
+                <input type="text" class="form-control" id="firstName" required autofocus>
+            </div>
+            <div class="col-sm-6 col-xs-12 form-group">
+                <label for="lastName" class="form-label">Last name
+                    <span style="color: red;">*</span>
+                </label>
+                <input type="text" class="form-control" id="lastName" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-xs-12 form-group">
+                <label for="contact" class="form-label">Phone number
+                    <span style="color: red;">*</span>
+                </label>
+            <input type="text" class="form-control" id="contact" placeholder="(111) 111-1111" required
+              pattern="^(\([0-9]{3}\)[ ]{0,1}|[0-9]{3}-)[0-9]{3}-[0-9]{4}$">
+            </div>
+            <div class="col-sm-6 col-xs-12 form-group">
+                <label for="email" class="form-label">Email address
+                    <span style="color: red;">*</span>
+                </label>
+            <input type="email" class="form-control" id="email" placeholder="yourname@example.com" required>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-9 col-xs-12 form-group">
+            <label for="streetAddress" class="form-label">Street address
+                <span style="color: red;">*</span>
+            </label>
+            <input type="text" class="form-control" id="streetAddress" required>
+          </div>
+          <div class="col-sm-3 col-xs-12 form-group">
+            <label for="aptNum" class="form-label">Apt Number</label>
+            <input type="text" class="form-control" id="aptNum">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-xs-12 form-group">
+                <label for="city" class="form-label">City
+                    <span style="color: red;">*</span>
+                </label>
+                <input type="text" class="form-control" id="city" required>
+              </div>
+              <!-- State -->
+              <div class="col-sm-4 col-xs-12 form-group">
+                <label for="state" class="form-label">State
+                    <span style="color: red;">*</span>
+                </label>
+                <input type="text" class="form-control" id="state" required>
+              </div>
+              <!-- Zipcode -->
+              <div class="col-sm-4 col-xs-12 form-group">
+                <label for="zipCode" class="form-label">Zipcode
+                    <span style="color: red;">*</span>
+                </label>
+                <input type="text" class="form-control" id="zipCode" inputmode="numeric"
+                  pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$" required>
+              </div>
+        </div>
+        <hr class="custom-hr">
+        <h4><strong>Education</strong></h4>
+        <div class="row">
+            <label class="form-label" style="padding-left: 15px;">
+                When is you most recent graduation ? 
+                <span style="color: red;">*</span></label><br>
+            <div class="col-sm-4 col-xs-6 form-group">
+                <input class="form-control" list="months" id="month" placeholder="Month" required>
+                <datalist id="months">
+                  <option value="January">January</option>
+                  <option value="Febraury">Febraury</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+                </datalist>
+              </div>
+              <div class="col-sm-2 col-xs-6 form-group">
+                <input type="text" class="form-control" id="year" placeholder="Year"
+                  pattern="^(19[5-9]\d|20[0-1]\d|202[0-3])$" required>
+              </div>
+        </div>
+        <hr class="custom-hr">
+        <h4><strong>Questions</strong></h4>
+        <div class="row">
+            <div class="col-xs-12 form-group">
+                <label class="form-label">What did you like most about the campus ?</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="aboutCampusStudents" id="check1">
+                  <label class="form-check-label" for="check1">
+                    Students
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="aboutCampusLocation" id="check2">
+                  <label class="form-check-label" for="check2">
+                    Location
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="aboutCampusCampus" id="check3">
+                  <label class="form-check-label" for="check3">
+                    Campus
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="aboutCampusAtmosphere" id="check4">
+                  <label class="form-check-label" for="check4">
+                    Atmosphere
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="aboutCampusDorm" id="check5">
+                  <label class="form-check-label" for="check5">
+                    Dorm rooms
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="aboutCampusSports" id="check6">
+                  <label class="form-check-label" for="check6">
+                    Sports
+                  </label>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 form-group">
+                <label class="form-label">How did you become interested in this university ?
+                    <span style="color: red;">*</span>
+                </label>
+                <br>
+                <label class="radio-inline">
+                    <input type="radio" name="interest" id="interestRadio1" required>Friends
+                </label>                
+                <label class="radio-inline">
+                    <input type="radio" name="interest" id="interestRadio2" required>Television
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="interest" id="interestRadio3" required>Internet
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="interest" id="interestRadio4" required>Other
+                </label>
+              </div>
+        </div>
+        <div class="row">
+            <label class="form-label" style="padding-left: 15px;">How likely do you recommend this school to other prospective
+                students ? <span style="color: red;">*</span></label><br>
+            <div class="col-md-4 col-xs-12 form-group">
+                <select class="form-control" id="likelihood" required>
+                  <option selected value="">Select an option</option>
+                  <option value="veryLikely">Very Likely</option>
+                  <option value="likely">Likely</option>
+                  <option value="unlikely">Unlikely</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 form-group">
+                <label for="comments" class="form-label">Provide any additional comments</label>
+                <textarea class="form-control" id="comments" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 form-group">
+              <label for="raffle" class="form-label">Enter atleast 10 comma separated numbers 
+                from 1 through 100: <span style="color: red;">*</span></label>
+              <textarea class="form-control" id="raffle" rows="3" required></textarea>
+          </div>
+        </div>
+        <hr class="custom-hr">
+        <h4><strong>Acknowledgement</strong></h4>
+        <div class="row">
+            <div class="col-md-6 col-xs-12 form-group">
+                <label for="fullName" class="form-label">
+                    Please enter your full name
+                    <span style="color: red;">*</span>
+                </label>
+                <input type="text" class="form-control" id="fullName" required></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-xs-12 form-group">
+                <label for="date" class="form-label">
+                    Date <span style="color: red;">*</span>
+                </label>
+                <input type="date" class="form-control" id="date" required></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-xs-12 form-group">
+                <input class="form-check-input" type="checkbox" name="terms" id="terms" required>
+                <label class="form-check-label" for="terms">
+                  Agree to terms and conditions <span style="color: red;">*</span>
+                </label>
+              </div>
+        </div>
+        <button type="submit" class="btn btn_custom col-xs-3">Submit</button>
+    </form>
+    <br><br>
+  </div>
+</div>
+
+<footer>
+    <div class="container custom-footer" id="footer">
+        <div class="row">
+            <div class="col-md-4 col-xs-6">
+              <img src="./images/gmu_white_logo.png" alt="GMU" style="width: 200px;">
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <h5> Contact </h5>
+              <hr style="width: 100%; margin-top: 0;">
+              <p><span class="glyphicon glyphicon-map-marker"></span> Department of Computer Science 
+                 <br>&nbsp&nbsp&nbsp&nbsp Nguyen Engineering Building
+                 <br>&nbsp&nbsp&nbsp&nbsp 4400 University Drive
+                 <br>&nbsp&nbsp&nbsp&nbsp Fairfax, VA 22030 </p>
+              <p><span class="glyphicon glyphicon-earphone"> 703-993-1530 (P)</span></p>
+              <p><span class="glyphicon glyphicon-print"> 703-993-1710 (F)</span></p>
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <h5> Follow us @ </h5>
+              <hr style="width: 100%; margin-top: 0;">
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/masoncec/" class="sm_icon">
+                <i class="bi bi-facebook fs-3"></i>
+              </a>
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/mason_cec/" class="sm_icon">
+                <i class="bi bi-instagram fs-3"></i>
+              </a>
+              <!-- Twitter -->
+              <a href="https://twitter.com/mason_cec" class="sm_icon">
+                <i class="bi bi-twitter fs-3"></i>
+              </a>
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/school/george-mason-university-college-of-engineering-and-computing/"
+                class="sm_icon">
+                <i class="bi bi-linkedin fs-3"></i>
+              </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

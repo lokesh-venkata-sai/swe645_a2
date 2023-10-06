@@ -1,0 +1,130 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  /* height: 100%; */
+  line-height: 1.8;
+  /* background-color:  #FFCC33; */
+  background-color: #006633;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+h1, h3{
+    color: #006633;
+}
+
+.bg-white{
+    background-color: white;
+}
+.header-top{
+    display: grid;
+    margin-top: -2px;
+    background-color: white;
+    border: 5px solid #006633;
+    box-shadow: 5px 5px #FFCC33;
+}
+
+.header-top .header-text{
+    text-align: left;
+    margin-top: 30px;
+    color: black;
+}
+
+.navbar{
+    margin-bottom: 0px;
+    border-radius: 0px;
+    margin-top: 5px;
+    border-left: 5px solid #006633;
+    border-right: 5px solid #006633;
+    /* border: 5px solid #006633; */
+}
+
+.main{
+    /* border: 5px solid #006633; */
+    border-left: 5px solid #006633;
+    border-right: 5px solid #006633;
+}
+
+.survey_main{
+    border-left: 5px solid #006633;
+    border-right: 5px solid #006633;
+    background-color: whitesmoke
+}
+.gmu_yellow{
+    color: #FFCC33;
+}
+
+a.list-group-item{
+    color: white;
+}
+.list-group-item{
+    background-color: #00909e;
+}
+a.list-group-item:hover{
+    background-color: #00bed1;
+}
+#home{
+    /* height: 100vh; */
+    margin-top: 0px;
+}
+
+#courses{
+    padding-top: 50px;
+}
+.degrees-list{
+    padding-right: 40px;
+}
+
+tr:nth-child(even) {
+    background-color: #f8d671;
+    color: #006633;
+}
+
+th {
+    background-color: #006633;
+    color: white;
+}
+
+.panel-default>.panel-heading:hover{
+    background-color: #006633;
+    color: white;
+}
+
+footer>.custom-footer{
+    background-color: rgb(64, 62, 62);
+    border-left: 5px solid #006633;
+    border-right: 5px solid #006633;
+    color: white;
+    padding-top: 10px;
+}
+
+.sm_icon{
+    font-size: 28px;
+}
+
+.radio-inline{
+    font-weight: bold;
+}
+
+.custom-hr{
+    border-top: 1px solid dimgrey;
+}
+
+.survey_main{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.btn_custom{
+    background-color: #FFCC33;
+    font-weight: bold;
+}
+
+/* .form-group{
+    padding-left: 50px;
+    padding-right: 50px;
+} */
