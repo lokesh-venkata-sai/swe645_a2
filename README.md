@@ -31,7 +31,7 @@ The static homepage is accessible on AWS S3, and the dynamic Student Survey appl
 - **Kubernetes Deployment**: Deployed on a Kubernetes cluster managed by Rancher for enhanced scalability and fault tolerance. The deployment includes at least three replicas to ensure high availability.
 - **CI/CD Pipeline**: Automated build and deployment processes using Jenkins, integrated with GitHub for continuous integration and delivery.
 
-## Technologies Used
+## Technologies/Tools Used
 
 - **HTML/CSS**: Utilized for designing the static class homepage and the Student Survey form, with W3.CSS templates enhancing the UI/UX design.
 - **AWS S3**: Hosts the static class homepage, ensuring high availability and reliability.
