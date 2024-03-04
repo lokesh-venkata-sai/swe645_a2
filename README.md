@@ -1,4 +1,4 @@
-# SWE645 Assignment 2
+# SWE645 Assignment 2 - Dynamic Student Survey form
 
 ## Project Overview
 
@@ -16,7 +16,7 @@ this application collects comprehensive survey data from students. Key functiona
 - Required fields for personal and contact information.
 - Checkboxes for campus preferences.
 - Radio buttons for university interest sources.
-- A dropdown for likelihood of recommending the school.
+- A dropdown for the likelihood of recommending the school.
 - A raffle entry field for a chance to win a free movie ticket.
 - A section for additional comments.
 
