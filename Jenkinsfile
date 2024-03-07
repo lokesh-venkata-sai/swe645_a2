@@ -1,4 +1,4 @@
-//This file will create a CI/CD pipeline for building and deploying the dcoker image to k8 cluster using Github as source control version.
+//This file will create a CI/CD pipeline for building and deploying the docker image to k8s cluster using Github as source.
 
 pipeline{
     
